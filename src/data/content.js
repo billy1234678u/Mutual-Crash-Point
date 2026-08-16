@@ -37,7 +37,7 @@ export const siteContent = {
     },
     {
       id: 3,
-      image: "/Memories/MJ.jpeg",
+      image: "/Memories/Scared.jpeg",
       caption: "Just us.",
     },
     {
@@ -47,7 +47,7 @@ export const siteContent = {
     },
     {
       id: 5,
-      image: "/Memories/Scared.jpeg",
+      image: "/Memories/MJ.jpeg",
       caption: "We were so happy that day.",
     },
     {
