@@ -27,32 +27,32 @@ export const siteContent = {
   memories: [
     {
       id: 1,
-      image: "[MEMORY_PHOTO_1]",
+      image: "/Memories/M+U.jpeg",
       caption: "The day everything felt different ❤️",
     },
     {
       id: 2,
-      image: "[MEMORY_PHOTO_2]",
+      image: "/Memories/Young.jpeg",
       caption: "One of my favorite memories.",
     },
     {
       id: 3,
-      image: "[MEMORY_PHOTO_3]",
+      image: "/Memories/MJ.jpeg",
       caption: "Just us.",
     },
     {
       id: 4,
-      image: "[MEMORY_PHOTO_4]",
+      image: "/Memories/OBS.jpeg",
       caption: "A moment I'll always remember.",
     },
     {
       id: 5,
-      image: "[MEMORY_PHOTO_5]",
+      image: "/Memories/Scared.jpeg",
       caption: "We were so happy that day.",
     },
     {
       id: 6,
-      image: "[MEMORY_PHOTO_6]",
+      image: "/Memories/Moon.jpeg",
       caption: "Another beautiful memory with you.",
     },
   ],
