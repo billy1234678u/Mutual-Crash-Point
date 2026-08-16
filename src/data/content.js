@@ -38,7 +38,7 @@ export const siteContent = {
     {
       id: 3,
       image: "/Memories/Scared.jpeg",
-      caption: "Just us.",
+      caption: "You in My Head.",
     },
     {
       id: 4,
