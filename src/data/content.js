@@ -19,7 +19,9 @@ export const siteContent = {
     paragraphs: [
       "Your smile illuminates my world like Ubuntu loading screen on my laptop, pure magic! From the moment I met you, my heart executed a command: LOVE HER. ",
       "Your touch ignites a fire stronger than any Unix superuser permission, unstoppable! My love for you is a shell script running forever in my heart. ",
-      "Will you be my forever debug partner, my love? ",
+      "Will you be my forever debug partner, my love?
+      Yours 4L
+      PURPY. ",
     ],
   },
 
