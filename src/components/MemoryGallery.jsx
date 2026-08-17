@@ -27,15 +27,25 @@ export default function MemoryGallery() {
               <div className="relative w-full h-64 bg-gradient-to-br from-romantic-200 to-romantic-100 overflow-hidden">
                 {memory.image && !memory.image.includes('[') ? (
                   memory.image.endsWith('.mp4') || memory.image.endsWith('.webm') || memory.image.endsWith('.mov') ? (
-                    <video
-                      src={memory.image}
-                      alt={memory.caption}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                    />
+                    <>
+                      <video
+                        key={`video-${memory.id}`}
+                        src={memory.image}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-20">
+                        <div className="bg-white rounded-full p-4 shadow-lg">
+                          <svg className="w-6 h-6 text-romantic-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </>
                   ) : (
                     <img
                       src={memory.image}
