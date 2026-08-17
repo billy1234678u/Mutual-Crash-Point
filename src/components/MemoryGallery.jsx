@@ -26,11 +26,23 @@ export default function MemoryGallery() {
               {/* Image container */}
               <div className="relative w-full h-64 bg-gradient-to-br from-romantic-200 to-romantic-100 overflow-hidden">
                 {memory.image && !memory.image.includes('[') ? (
-                  <img
-                    src={memory.image}
-                    alt={memory.caption}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
+                  memory.image.endsWith('.mp4') || memory.image.endsWith('.webm') || memory.image.endsWith('.mov') ? (
+                    <video
+                      src={memory.image}
+                      alt={memory.caption}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
+                  ) : (
+                    <img
+                      src={memory.image}
+                      alt={memory.caption}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  )
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
                     <span className="text-6xl opacity-50">📷</span>
@@ -78,11 +90,23 @@ export default function MemoryGallery() {
             {/* Image */}
             <div className="w-full h-64 md:h-96 bg-gradient-to-br from-romantic-200 to-romantic-100 flex items-center justify-center">
               {selectedMemory.image && !selectedMemory.image.includes('[') ? (
-                <img
-                  src={selectedMemory.image}
-                  alt={selectedMemory.caption}
-                  className="w-full h-full object-cover"
-                />
+                selectedMemory.image.endsWith('.mp4') || selectedMemory.image.endsWith('.webm') || selectedMemory.image.endsWith('.mov') ? (
+                  <video
+                    src={selectedMemory.image}
+                    alt={selectedMemory.caption}
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    controls
+                    loop
+                    playsInline
+                  />
+                ) : (
+                  <img
+                    src={selectedMemory.image}
+                    alt={selectedMemory.caption}
+                    className="w-full h-full object-cover"
+                  />
+                )
               ) : (
                 <span className="text-9xl opacity-50">📷</span>
               )}

@@ -3,7 +3,7 @@
 
 export const siteContent = {
   // Partner information
-  partnerName: "MJ",
+  partnerName: "Abbie",
   
   // Landing section
   landing: {
@@ -15,13 +15,12 @@ export const siteContent = {
   // Love letter section
   letter: {
     title: "A Letter From Me 💌",
-    opening: "My Dearest MJ",
+    opening: "My Dearest Abbie",
     paragraphs: [
       "Your smile illuminates my world like Ubuntu loading screen on my laptop, pure magic! From the moment I met you, my heart executed a command: LOVE HER. ",
       "Your touch ignites a fire stronger than any Unix superuser permission, unstoppable! My love for you is a shell script running forever in my heart. ",
-      "Will you be my forever debug partner, my love?
-      Yours 4L
-      PURPY. ",
+      "Will you be my forever debug partner, my love?"
+      "Yours 4L. ",
     ],
   },
 
@@ -29,32 +28,32 @@ export const siteContent = {
   memories: [
     {
       id: 1,
-      image: "/Memories/M+U.jpeg",
+      image: "/Memories/Chum.jpeg",
       caption: "The day everything felt different ❤️",
     },
     {
       id: 2,
-      image: "/Memories/Young.jpeg",
+      image: "/Memories/Abbie.jpeg",
       caption: "One of my favorite memories.",
     },
     {
       id: 3,
-      image: "/Memories/Scared.jpeg",
+      image: "/Memories/Soul.jpeg",
       caption: "You in My Head.",
     },
     {
       id: 4,
-      image: "/Memories/OBS.jpeg",
+      image: "/Memories/Us.mp4",
       caption: "A moment I'll always remember.",
     },
     {
       id: 5,
-      image: "/Memories/MJ.jpeg",
+      image: "/Memories/Pie.jpeg",
       caption: "We were so happy that day.",
     },
     {
       id: 6,
-      image: "/Memories/Moon.jpeg",
+      image: "/Memories/XOXO.jpeg",
       caption: "Another beautiful memory with you.",
     },
   ],
